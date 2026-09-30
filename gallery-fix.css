@@ -1,0 +1,21 @@
+.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:14px;padding:0 5vw}.gallery-item,.gallery-small,.gallery-tall{height:auto;margin:0;overflow:hidden;background:rgba(7,19,28,.5);border:1px solid rgba(234,242,238,.16)}.gallery-item img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;transition:transform .7s}.gallery-item:after{display:none}.gallery-item figcaption{position:static;display:grid;gap:6px;padding:15px 16px 17px;background:rgba(7,19,28,.88);color:var(--paper);text-shadow:none}.gallery-item figcaption span{color:var(--lime)}.gallery-item figcaption strong{font-size:17px;line-height:1.15}.gallery-large,.gallery-small,.gallery-tall{grid-column:auto}@media(max-width:800px){.gallery-grid{grid-template-columns:1fr;gap:22px;padding:0 7vw}.gallery-item,.gallery-small,.gallery-tall{height:auto;margin:0}.gallery-item img{width:100%;height:auto}.gallery-item figcaption{padding:14px}.gallery-item figcaption strong{font-size:16px}}
+
+/* Galería expandida — grid uniforme de 4 columnas */
+.gallery-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+.gallery-large,.gallery-small,.gallery-tall{grid-column:auto!important}
+
+/* Sección de videos adicionales */
+.videos-extra-shell{padding-top:60px!important;padding-bottom:80px!important}
+.videos-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:40px}
+.video-card{margin:0;background:rgba(7,19,28,.6);border:1px solid rgba(234,242,238,.16);overflow:hidden}
+.video-card video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover}
+.video-card figcaption{padding:14px 16px 16px;display:grid;gap:5px}
+.video-card figcaption span{font:10px var(--font-mono);color:var(--lime);text-transform:uppercase}
+.video-card figcaption strong{font-size:16px;line-height:1.2;color:var(--paper)}
+@media(max-width:800px){
+  .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .videos-grid{grid-template-columns:1fr}
+}
+@media(max-width:500px){
+  .gallery-grid{grid-template-columns:1fr!important}
+}

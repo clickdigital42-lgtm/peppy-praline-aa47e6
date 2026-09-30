@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Bloquear archivos que no aportan SEO
+Disallow: /gemini-code-1790708003127.html
+
+Sitemap: https://clickdigital.co/sitemap.xml

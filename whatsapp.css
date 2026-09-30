@@ -1,0 +1,5 @@
+.whatsapp-float{background:#25d366!important;color:#062b18!important;border-color:rgba(255,255,255,.28)!important;box-shadow:0 12px 30px rgba(0,0,0,.28),0 0 0 0 rgba(37,211,102,.48)!important}
+.whatsapp-float:hover{background:#1ebe5d!important}
+.whatsapp-icon{display:block;width:25px;height:25px;border:0;border-radius:0;transform:none;fill:currentColor}
+@keyframes whatsapp-pulse{0%,72%,100%{box-shadow:0 12px 30px rgba(0,0,0,.28),0 0 0 0 rgba(37,211,102,.48)}85%{box-shadow:0 12px 30px rgba(0,0,0,.28),0 0 0 11px rgba(37,211,102,0)}}
+@media(max-width:800px){.whatsapp-icon{width:28px;height:28px}}
